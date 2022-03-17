@@ -4,7 +4,8 @@ class Content extends Component {
     render(){
     return (
       <article>
-        HTML is ...
+        <h2>{this.props.title}</h2>
+        {this.props.desc}
       </article>
     );
     }

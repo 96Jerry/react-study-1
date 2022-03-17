@@ -43,12 +43,12 @@ class App extends Component {
       <Subject title={this.state.subject.title}
       onChangePage={
         function(){
-          this.Setstate({mode:'welcome'});
+          this.setState({mode:'welcome'});
         }.bind(this)
       }
       ></Subject>
       <TOC onChangePage={
-        function(){
+        function(id){
           this.setState({mode:'read', selectedContentId:Number(id)});
         }.bind(this)
       }
